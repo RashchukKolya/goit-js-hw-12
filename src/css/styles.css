@@ -1,0 +1,49 @@
+@import url('./reset.css');
+@import url('./loader.css');
+
+.form {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+input[type='text'] {
+  display: block;
+  width: 200px;
+  font-weight: bold;
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+button[type='submit'] {
+  display: block;
+  width: 100px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  gap: 1em;
+  padding: 20px;
+}
+
+.photo-card {
+  display: block;
+  height: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}

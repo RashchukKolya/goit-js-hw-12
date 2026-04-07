@@ -6,6 +6,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 });
 const loader = document.querySelector('.loader');
 const gallery = document.querySelector('.gallery');
+const loadMoreBtn = document.querySelector('.load-more');
 
 function createGallery(images) {
   const imgListItems = images.reduce(
@@ -52,4 +53,20 @@ function showLoader() {
 function hideLoader() {
   loader.classList.add('hidden');
 }
-export { createGallery, clearGallery, showLoader, hideLoader };
+
+function showLoadMoreButton() {
+  loadMoreBtn.classList.remove('hidden');
+}
+
+function hideLoadMoreButton() {
+  loadMoreBtn.classList.add('hidden');
+}
+
+export {
+  createGallery,
+  clearGallery,
+  showLoader,
+  hideLoader,
+  showLoadMoreButton,
+  hideLoadMoreButton,
+};
